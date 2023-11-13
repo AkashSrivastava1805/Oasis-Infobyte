@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <span><img src="account person icon.png" height="75px" width="75px" class="acccircle"></span>
+        <h2>Login or Register</h2>
+        <div id="loginForm">
+            <label for="loginUsername" class="usserpass">Username:</label>
+            <input type="text" id="loginUsername" required>
+
+            <label for="loginPassword" class="usserpass" id="usspasssss">Password:</label>
+            <input type="password" id="loginPassword" required>
+
+            <button onclick="login()" class="loginbtn">Login</button>
+        </div>
+
+        <div id="registerForm" style="display: none;">
+            <label for="registerUsername" class="usserpass">Username:</label>
+            <input type="text" id="registerUsername" required>
+
+            <label for="registerPassword" class="usserpass">Password:</label>
+            <input type="password" id="registerPassword" required>
+
+            <button onclick="register()" id="registerbtn">Register</button>
+        </div>
+
+        <p id="error"></p>
+        <p class="textlast">Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Register here</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
